@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Question {
 	
-		//Unique question ID
+        //Unique question ID
 	private int questionUid;
 	
 	//Text of the question
@@ -22,6 +22,7 @@ public class Question {
 	private List<String> tags = new ArrayList<>();
 	
 	//Difficulty level of the question
+	//ToDo - limit value to 1-10
 	private int level;
 	
 	
