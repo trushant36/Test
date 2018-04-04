@@ -5,23 +5,28 @@ import java.util.List;
 
 public class Question {
 	
-	public int getQuestionUid() {
-		return questionUid;
-	}
-
-	public void setQuestionUid(int questionUid) {
-		this.questionUid = questionUid;
-	}
+		//Unique question ID
 	private int questionUid;
+	
+	//Text of the question
 	private String questionText;
+	
+	//Options to be displayed to as answer
 	private List<String> options =new ArrayList<>();
+	
+	//Correct Option(s) as a question
+	//may have more than one correct answer
 	private List<String> correctOption = new ArrayList<>();
+	
+	//Tag list for question classification 
 	private List<String> tags = new ArrayList<>();
+	
+	//Difficulty level of the question
 	private int level;
 	
 	
 	public Question() {
-		super();
+		
 	}
 
 	public Question(int questionUid, String questionText, List<String> options, List<String> correctOption,
@@ -34,6 +39,16 @@ public class Question {
 		this.tags = tags;
 		this.level = level;
 	}
+	
+	
+	public int getQuestionUid() {
+		return questionUid;
+	}
+
+	public void setQuestionUid(int questionUid) {
+		this.questionUid = questionUid;
+	}
+
 
 	public String getQuestionText() {
 		return questionText;
