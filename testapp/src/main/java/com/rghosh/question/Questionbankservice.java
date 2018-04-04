@@ -15,7 +15,7 @@ public class Questionbankservice {
 			                                              new Question(2,"Question Text2", 
 	                                                           Arrays.asList("a","b","c","d"), 
 	                                                           Arrays.asList("a","c"),
-	                                                 r          Arrays.asList("comp sc","java", "MVC"),
+	                                                           Arrays.asList("comp sc","java", "MVC"),
 	                                                            7));
 
 	public List<Question> getQuestionbank() {
