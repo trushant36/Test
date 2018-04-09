@@ -3,9 +3,15 @@ package com.rghosh.question;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Entity;
+
+import org.springframework.data.annotation.Id;
+
+@Entity
 public class Question {
 	
-        //Unique question ID
+    //Unique question ID
+	@Id
 	private int questionUid;
 	
 	//Text of the question
